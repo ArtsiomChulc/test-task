@@ -1,0 +1,68 @@
+.order-place {
+    padding-block: 100px;
+
+    display: flex;
+    gap: 27px;
+
+    .order-photo {
+        width: 100%;
+        max-width: 622px;
+        position: relative;
+        overflow: hidden;
+        padding-top: 47.61%;
+
+        > img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .order-desc {
+        flex: 1 0 33%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .order-desc-list {
+            text-align: left;
+            padding-block: 40px;
+            flex: 1 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            li {
+                position: relative;
+                padding-left: 60px;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid #55565a;
+                    padding-bottom: 40px;
+                    margin-bottom: 35px;
+                }
+            }
+
+            > li:before {
+                content: "";
+                position: absolute;
+                left: -10px;
+                top: -10px;
+                width: 58px;
+                height: 47px;
+                background: url("../../images/icons/exclude.svg") no-repeat;
+            }
+
+        }
+
+        .order-btn {
+
+            > button {
+                padding: 20px 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+.button {
+    width: 100%;
+    background: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+}

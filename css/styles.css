@@ -2,7 +2,9 @@
 @import "./components/banner.css";
 @import "./components/footer.css";
 @import "./components/order.css";
+@import "./components/contact.css";
 @import "./components/button.css";
+@import "./components/block.css";
 
 body {
     background: #282829;

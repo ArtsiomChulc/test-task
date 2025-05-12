@@ -1,5 +1,5 @@
 .order-place {
-    padding-block: 100px;
+    padding-top: 100px;
 
     display: flex;
     gap: 27px;
@@ -29,37 +29,44 @@
 
         .order-desc-list {
             text-align: left;
-            padding-block: 40px;
+            padding-block: 20px;
             flex: 1 0 auto;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            gap: 20px;
 
-            li {
+            > li {
                 position: relative;
-                padding-left: 60px;
+                padding-left: 80px;
+                padding-bottom: 20px;
+                padding-top: 20px;
+                max-height: calc(1.5em * 4);
 
-                &:not(:last-child) {
-                    border-bottom: 1px solid #55565a;
-                    padding-bottom: 40px;
-                    margin-bottom: 35px;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                line-height: 1.5;
+                font-size: 16px;
+                color: #fff;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 58px;
+                    height: 47px;
+                    background: url("../../images/icons/exclude.svg") no-repeat;
                 }
             }
-
-            > li:before {
-                content: "";
-                position: absolute;
-                left: -10px;
-                top: -10px;
-                width: 58px;
-                height: 47px;
-                background: url("../../images/icons/exclude.svg") no-repeat;
-            }
-
         }
 
         .order-btn {
-
             > button {
                 padding: 20px 0;
             }

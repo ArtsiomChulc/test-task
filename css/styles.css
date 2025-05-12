@@ -13,7 +13,15 @@ body {
     width: 100%;
 }
 
-.container {
-    max-width: 1920px;
+.container-small, .container {
     margin: 0 auto;
+}
+
+.container {
+    max-width: 1900px;
+    padding-inline: 10px;
+}
+
+.container-small {
+    max-width: 1600px;
 }

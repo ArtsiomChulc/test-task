@@ -12,21 +12,11 @@
         background-color: rgba(34, 34, 34, 0.6);
     }
 
-    display: flex;
-    align-items: center;
-    gap: 200px;
-    padding: 2px 8px;
-
-    .logo {
-        font-family: "Prata", sans-serif;
-        font-weight: 400;
-        font-size: 36px;
-        line-height: 150%;
-        letter-spacing: 0.03em;
-        text-align: center;
-        color: #fff;
-        padding-left: 140px;
-        cursor: pointer;
+    .header-block {
+        display: flex;
+        align-items: center;
+        gap: 200px;
+        padding: 2px 8px;
     }
 
     .menu {
@@ -66,4 +56,15 @@
         }
     }
 
+}
+.logo {
+    font-family: "Prata", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #fff;
+    /*padding-left: 140px;*/
+    cursor: pointer;
 }

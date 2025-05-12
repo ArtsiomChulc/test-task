@@ -6,3 +6,10 @@ window.addEventListener('scroll', () => {
         header.classList.remove('scrolled');
     }
 });
+
+const onUpHandler = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}

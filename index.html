@@ -9,9 +9,9 @@
 </head>
 <body>
 
-<header class="container">
-    <div class="header">
-        <span class="logo" id="home">LOGO</span>
+<header class="header">
+    <div class="header-block container-small">
+        <span class="logo">LOGO</span>
         <nav class="menu">
             <a href="#home">Home</a>
             <a href="#order">Place an order</a>
@@ -20,9 +20,9 @@
     </div>
 </header>
 
-<main class="container">
-    <div class="banner">
-        <div class="banner-wrapper">
+<main>
+    <div class="banner" id="home">
+        <div class="banner-wrapper container-small">
             <div class="banner-text">
                 <h1>
                     Discover your dream property
@@ -50,7 +50,7 @@
     </div>
     
     
-    <section class="order-place" id="order">
+    <section class="container order-place" id="order">
         <div class="order-photo">
             <img src="images/order_left_photo.png" alt="order banner">
         </div>
@@ -74,7 +74,7 @@
     
     <div class="showPhoto"></div>
     
-    <section class="contact-place" id="contact">
+    <section class="contact-place container-small" id="contact">
         <div class="contact-form">
             <h2>
                 Consectetur
@@ -102,7 +102,9 @@
         
         <div class="contact-img">
             <img class="absolute" src="./images/contact_block.png" alt="Women photo">
-            <img class="contact-bg" src="./images/contact_bg_111.png" alt="Contact block background">
+            <div class="contact-bg">
+                <img src="./images/contact_bg_111.png" alt="Contact block background">
+            </div>
         </div>
     </section>
     
@@ -111,7 +113,34 @@
 </main>
 
 <footer>
-    <!-- Footer content -->
+    <div class="sub-footer">
+        <ul class="sub-footer-list">
+            <li>consectetur</li>
+            <li>Adipiscing</li>
+            <li>tempor</li>
+        </ul>
+    </div>
+    <div class="footer-block container-small">
+        <div class="footer-logo">
+            <span class="logo" onclick={onUpHandler()}>LOGO</span>
+            <p class="copyright">© 2024, Copyright.</p>
+        </div>
+        <div class="social-link">
+            <ul class="social-list">
+                <li><a href="#"><img src="./images/icons/insta.svg" alt="instagram"></a></li>
+                <li><a href="#"><img src="./images/icons/tik-tok.svg" alt="tik tok"></a></li>
+                <li><a href="#"><img src="./images/icons/ln.svg" alt="linkedin"></a></li>
+                <li><a href="#"><img src="./images/icons/facebook.svg" alt="facebook"></a></li>
+                <li><a href="#"><img src="./images/icons/telegram.svg" alt="telegram"></a></li>
+                <li><a href="#"><img src="./images/icons/you-tube.svg" alt="you tube"></a></li>
+            </ul>
+            <span class="privacy">Privacy policy</span>
+        </div>
+        <div class="footer-order">
+            <button class="button">Order</button>
+            <span class="terms">Terms of Use</span>
+        </div>
+    </div>
 </footer>
 
 

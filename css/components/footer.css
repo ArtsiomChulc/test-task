@@ -1,0 +1,99 @@
+footer {
+    position: relative;
+    z-index: 2000;
+    width: 100%;
+    background: #222;
+
+    .sub-footer {
+        padding: 40px 0;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #fff;
+        border-bottom: 2px solid #d5c9be;
+        border-top: 2px solid #d5c9be;
+
+        .sub-footer-list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 60px;
+
+            > li {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .footer-block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px 10px;
+
+        .footer-logo {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 54px;
+
+            > p {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 150%;
+                color: #fff;
+            }
+        }
+
+        .social-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 63px;
+
+            .social-list {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 32px;
+
+                > li {
+                    cursor: pointer;
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+
+            .privacy {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 150%;
+                color: #d5c9be;
+            }
+        }
+
+        .footer-order {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 38px;
+
+            > button {
+                padding: 27px 8px;
+            }
+
+            .terms {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 150%;
+                color: #d5c9be;
+            }
+        }
+    }
+}
